@@ -1,0 +1,16 @@
+plugin.tx_fastgallery {
+	view {
+		# cat=plugin.tx_fastgallery/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:fastgallery/Resources/Private/Templates/
+		# cat=plugin.tx_fastgallery/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:fastgallery/Resources/Private/Partials/
+		# cat=plugin.tx_fastgallery/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:fastgallery/Resources/Private/Layouts/
+	}
+	settings {
+		# cat=plugin.tx_fastgallery/check; type=boolean; label=Include jQuery Library in Page
+		includeJqueryLib = 1
+		# cat=plugin.tx_fastgallery/check; type=boolean; label=Include fancyBox Library in Page
+		includeFancyboxLib = 1
+	}
+}

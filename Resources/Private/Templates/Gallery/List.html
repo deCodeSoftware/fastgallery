@@ -1,0 +1,9 @@
+<f:layout name="Default" />
+
+<f:section name="main">
+	<ul class="tx-fastgallery-listwrap">
+		<f:for each="{images}" as="image">
+			<f:render partial="Gallery/ImageRecord" arguments="{image:image, settings:settings}" />
+		</f:for>
+	</ul>
+</f:section>

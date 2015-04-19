@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-04-019T12:38:54Z" product-name="fastgallery">
+		<header/>
+		<body>
+			<trans-unit id="flexform.sheetTitle" xml:space="preserve">
+				<source>General</source>
+			</trans-unit>
+			<trans-unit id="flexform.galleryPath" xml:space="preserve">
+				<source>Directory name to display gallery</source>
+			</trans-unit>
+			<trans-unit id="flexform.pageLimit" xml:space="preserve">
+				<source>Page limit</source>
+			</trans-unit>
+			<trans-unit id="flexform.maxThumbWidth" xml:space="preserve">
+				<source>Max height of the thumb</source>
+			</trans-unit>
+			<trans-unit id="flexform.maxWidth" xml:space="preserve">
+				<source>Max height of the full image</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

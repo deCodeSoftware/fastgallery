@@ -1,0 +1,18 @@
+
+plugin.tx_fastgallery {
+	view {
+		templateRootPath = {$plugin.tx_fastgallery.view.templateRootPath}
+		partialRootPath = {$plugin.tx_fastgallery.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_fastgallery.view.layoutRootPath}
+	}
+}
+
+[globalVar = LIT:1 = {$plugin.tx_fastgallery.settings.includeJqueryLib}]
+page.includeJSFooterlibs.tx_fastgallery_jquery = EXT:fastgallery/Resources/Public/JavaScript/Contrib/jQuery/jquery.min.js
+[global]
+
+[globalVar = LIT:1 = {$plugin.tx_fastgallery.settings.includeFancyboxLib}]
+page.includeJSFooterlibs.tx_fastgallery_fancybox = EXT:fastgallery/Resources/Public/JavaScript/Contrib/fancyBox/jquery.fancybox.pack.js
+page.includeCSS.tx_fastgallery_fancybox = EXT:fastgallery/Resources/Public/JavaScript/Contrib/fancyBox/jquery.fancybox.css
+page.includeJSFooter.tx_fastgallery_fancybox_activate = EXT:fastgallery/Resources/Public/JavaScript/fancybox-activate.js
+[global]
