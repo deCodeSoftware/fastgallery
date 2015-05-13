@@ -38,6 +38,8 @@ class GalleryController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 
 		$extensions = 'jpg,jpeg,png,gif';
 
+		$this->settings['imagesPerPage'] = 2;
+
 		$galleryPath = PATH_site.trim($this->settings['galleryPath']);
 		if ( substr($galleryPath, -1)!='/' ) {
 			$galleryPath .= '/';
@@ -55,7 +57,8 @@ class GalleryController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 		$this->view->assignMultiple(
 			array(
 				'images' => $images,
-				'settings' => $this->settings
+				'settings' => $this->settings,
+				'currentPage' => ($this->request->hasArgument('currentPage') ? $this->request->getArgument('currentPage') : 1)
 			)
 		);
 	}

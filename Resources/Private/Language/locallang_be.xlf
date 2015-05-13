@@ -18,6 +18,12 @@
 			<trans-unit id="flexform.maxWidth" xml:space="preserve">
 				<source>Max height of the full image</source>
 			</trans-unit>
+			<trans-unit id="galleryPagination_previous" xml:space="preserve">
+				<source>Pagina precedenta</source>
+			</trans-unit>
+			<trans-unit id="galleryPagination_next" xml:space="preserve">
+				<source>Urmatoarea pagina</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

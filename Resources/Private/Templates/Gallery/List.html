@@ -1,9 +1,54 @@
+{namespace n = deCode\FastGallery\ViewHelpers}
+
 <f:layout name="Default" />
 
 <f:section name="main">
 	<ul class="tx-fastgallery-listwrap">
-		<f:for each="{images}" as="image">
-			<f:render partial="Gallery/ImageRecord" arguments="{image:image, settings:settings}" />
-		</f:for>
+		<n:fastGalleryPaginator images="{images}" as="images_list" currentPage="{currentPage}" settings="{settings}" >
+			<f:for each="{images_list}" as="image">
+				<f:render partial="Gallery/ImageRecord" arguments="{image:image, settings:settings}" />
+			</f:for>
+			<f:if condition="{pagination.numberOfPages} > 1">
+				<f:if condition="{pagination.current} > 1">
+					<f:link.action action="list" arguments="{currentPage: pagination.previousPage}">
+						<f:translate key="galleryPagination_previous" default="Previous"/>
+					</f:link.action>
+				</f:if>
+				<div class="tx-fastgallery-Pagination">
+					<ul>
+						<f:for each="{pagination.pages_list}" as="page">
+							<f:if condition="{page.isCurrent}">
+								<f:then>
+									<li class="current">
+										{page.number}
+									</li>
+								</f:then>
+								<f:else>
+									<li>
+										<f:if condition="{page.number} == 1">
+											<f:then>
+												<f:link.action action="list">
+													{page.number}
+												</f:link.action>
+											</f:then>
+											<f:else>
+												<f:link.action action="list" arguments="{currentPage: page.number}">
+													{page.number}
+												</f:link.action>
+											</f:else>
+										</f:if>
+									</li>
+								</f:else>
+							</f:if>
+						</f:for>
+					</ul>
+				</div>
+				<f:if condition="{pagination.current} != {pagination.numberOfPages}">
+					<f:link.action action="list" arguments="{currentPage: pagination.nextPage}">
+						<f:translate key="galleryPagination_next" default="Next"/>
+					</f:link.action>
+				</f:if>
+			</f:if>
+		</n:fastGalleryPaginator>
 	</ul>
 </f:section>
