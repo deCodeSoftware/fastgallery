@@ -6,10 +6,10 @@ plugin.tx_fastgallery {
 		layoutRootPath = {$plugin.tx_fastgallery.view.layoutRootPath}
 	}
 	settings {
-		imagesPerPage_def = {$plugin.tx_fastgallery.settings.imagesPerPage_def}
+		imagesPerPage = {$plugin.tx_fastgallery.settings.imagesPerPage}
 		extensions = {$plugin.tx_fastgallery.settings.extensions}
-		maxThumbWidth_def = {$plugin.tx_fastgallery.settings.maxThumbWidth_def}
-		maxWidth_def = {$plugin.tx_fastgallery.settings.maxWidth_def}
+		maxThumbWidth = {$plugin.tx_fastgallery.settings.maxThumbWidth}
+		maxWidth = {$plugin.tx_fastgallery.settings.maxWidth}
 	}
 }
 

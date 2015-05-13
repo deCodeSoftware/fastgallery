@@ -12,13 +12,13 @@
 			<trans-unit id="flexform.pageLimit" xml:space="preserve">
 				<source>Page limit</source>
 			</trans-unit>
-			<trans-unit id="flexform.maxThumbWidth" xml:space="preserve">
+			<trans-unit id="flexform.maxThumbWidth_flex" xml:space="preserve">
 				<source>Max height of the thumb</source>
 			</trans-unit>
-			<trans-unit id="flexform.maxWidth" xml:space="preserve">
+			<trans-unit id="flexform.maxWidth_flex" xml:space="preserve">
 				<source>Max height of the full image</source>
 			</trans-unit>
-			<trans-unit id="flexform.imagesPerPage" xml:space="preserve">
+			<trans-unit id="flexform.imagesPerPage_flex" xml:space="preserve">
 				<source>Set how many images you want to view in a page</source>
 			</trans-unit>
 			<trans-unit id="galleryPagination_previous" xml:space="preserve">

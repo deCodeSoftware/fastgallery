@@ -13,12 +13,12 @@ plugin.tx_fastgallery {
 		# cat=plugin.tx_fastgallery/check; type=boolean; label=Include fancyBox Library in Page
 		includeFancyboxLib = 1
 		# cat=plugin.tx_fastgallery/settings; type=int+; label=Images per page
-		imagesPerPage_def = 2
+		imagesPerPage = 2
 		# cat=plugin.tx_fastgallery/settings; type=string; label=Allowed images extensions
 		extensions = jpg,jpeg,png,gif,bmp,pdf
 		# cat=plugin.tx_fastgallery/settings; type=int+; label=Max image height
-		maxThumbWidth_def = 100
+		maxThumbWidth = 100
 		# cat=plugin.tx_fastgallery/settings; type=int+; label=Max image width
-		maxWidth_def = 500
+		maxWidth = 500
 	}
 }
