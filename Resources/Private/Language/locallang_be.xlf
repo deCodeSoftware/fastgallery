@@ -22,10 +22,10 @@
 				<source>Set how many images you want to view in a page</source>
 			</trans-unit>
 			<trans-unit id="galleryPagination_previous" xml:space="preserve">
-				<source>Pagina precedenta</source>
+				<source>Previous page</source>
 			</trans-unit>
 			<trans-unit id="galleryPagination_next" xml:space="preserve">
-				<source>Urmatoarea pagina</source>
+				<source>Next page</source>
 			</trans-unit>
 		</body>
 	</file>

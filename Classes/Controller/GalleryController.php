@@ -36,6 +36,15 @@ class GalleryController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 	 */
 	public function listAction() {
 
+		$this->settings['imagesPerPage'] = ($this->settings['imagesPerPage'] ? $this->settings['imagesPerPage'] : $this->settings['imagesPerPage_def']);
+		unset($this->settings['imagesPerPage_def']);
+
+		$this->settings['maxThumbWidth'] = ($this->settings['maxThumbWidth'] ? $this->settings['maxThumbWidth'] : $this->settings['maxThumbWidth_def']);
+		unset($this->settings['maxThumbWidth_def']);
+
+		$this->settings['maxWidth'] = ($this->settings['maxWidth'] ? $this->settings['maxWidth'] :$this->settings['maxWidth_def']);
+		unset($this->settings['maxWidth_def']);
+
 		$galleryPath = PATH_site.trim($this->settings['galleryPath']);
 		if ( substr($galleryPath, -1)!='/' ) {
 			$galleryPath .= '/';
