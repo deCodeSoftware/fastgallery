@@ -34,6 +34,14 @@
 				</config>
 			</TCEforms>
 		</settings.maxWidth>
+		<settings.imagesPerPage>
+			<TCEforms>
+				<label>LLL:EXT:fastgallery/Resources/Private/Language/locallang_be.xlf:flexform.imagesPerPage</label>
+				<config>
+					<type>input</type>
+				</config>
+			</TCEforms>
+		</settings.imagesPerPage>
 	  </el> 
     </ROOT>
    </sDEF>

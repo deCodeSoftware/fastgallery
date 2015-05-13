@@ -5,6 +5,12 @@ plugin.tx_fastgallery {
 		partialRootPath = {$plugin.tx_fastgallery.view.partialRootPath}
 		layoutRootPath = {$plugin.tx_fastgallery.view.layoutRootPath}
 	}
+	settings {
+		imagesPerPage = {$plugin.tx_fastgallery.settings.imagesPerPage}
+		extensions = {$plugin.tx_fastgallery.settings.extensions}
+		maxThumbWidth = {$plugin.tx_fastgallery.settings.maxThumbWidth}
+		maxWidth = {$plugin.tx_fastgallery.settings.maxWidth}
+	}
 }
 
 [globalVar = LIT:1 = {$plugin.tx_fastgallery.settings.includeJqueryLib}]

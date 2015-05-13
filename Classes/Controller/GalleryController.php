@@ -36,16 +36,12 @@ class GalleryController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 	 */
 	public function listAction() {
 
-		$extensions = 'jpg,jpeg,png,gif';
-
-		$this->settings['imagesPerPage'] = 2;
-
 		$galleryPath = PATH_site.trim($this->settings['galleryPath']);
 		if ( substr($galleryPath, -1)!='/' ) {
 			$galleryPath .= '/';
 		}
 		
-		$filesArr = \TYPO3\CMS\Core\Utility\GeneralUtility::getFilesInDir($galleryPath, $extensions, TRUE);
+		$filesArr = \TYPO3\CMS\Core\Utility\GeneralUtility::getFilesInDir($galleryPath, $this->settings['extensions'], TRUE);
 		
 		$images = array();
 		foreach ($filesArr as $file) {
