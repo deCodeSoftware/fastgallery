@@ -18,22 +18,30 @@
 				</config>
 			</TCEforms>
 		</settings.galleryPath>
-		<settings.maxThumbWidth>
+		<settings.maxThumbWidth_flex>
 			<TCEforms>
-				<label>LLL:EXT:fastgallery/Resources/Private/Language/locallang_be.xlf:flexform.maxThumbWidth</label>
+				<label>LLL:EXT:fastgallery/Resources/Private/Language/locallang_be.xlf:flexform.maxThumbWidth_flex</label>
 				<config>
 					<type>input</type>
 				</config>
 			</TCEforms>
-		</settings.maxThumbWidth>
-		<settings.maxWidth>
+		</settings.maxThumbWidth_flex>
+		<settings.maxWidth_flex>
 			<TCEforms>
-				<label>LLL:EXT:fastgallery/Resources/Private/Language/locallang_be.xlf:flexform.maxWidth</label>
+				<label>LLL:EXT:fastgallery/Resources/Private/Language/locallang_be.xlf:flexform.maxWidth_flex</label>
 				<config>
 					<type>input</type>
 				</config>
 			</TCEforms>
-		</settings.maxWidth>
+		</settings.maxWidth_flex>
+		<settings.imagesPerPage_flex>
+			<TCEforms>
+				<label>LLL:EXT:fastgallery/Resources/Private/Language/locallang_be.xlf:flexform.imagesPerPage_flex</label>
+				<config>
+					<type>input</type>
+				</config>
+			</TCEforms>
+		</settings.imagesPerPage_flex>
 	  </el> 
     </ROOT>
    </sDEF>

@@ -10,3 +10,5 @@ if (!defined ('TYPO3_MODE')) {
 		'Gallery' => 'list'
 	)
 );
+
+require_once(\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath($_EXTKEY) . 'Classes/ViewHelpers/FastGalleryPaginatorViewHelper.php');
